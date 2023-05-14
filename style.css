@@ -1,41 +1,72 @@
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    padding-top: 20px;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
 
-  .resume {
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-  }
+.portfolio {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
 
-  h1, h2, h3 {
-    color: #333333;
-  }
+h1, h2, h3 {
+  color: #333333;
+}
 
-  .section-title {
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
 
-  .contact-info {
-    margin-bottom: 30px;
-  }
+.contact-info {
+  margin-bottom: 30px;
+}
 
-  .contact-info p {
-    margin-bottom: 5px;
-  }
+.contact-info p {
+  margin-bottom: 5px;
+}
 
-  .experience-item {
-    margin-bottom: 20px;
-  }
+.project-item {
+  margin-bottom: 20px;
+}
 
-  .education-item {
-    margin-bottom: 20px;
+.portfolio-gallery {
+  margin-top: 30px;
+}
+
+.portfolio-gallery .row {
+  margin-bottom: 20px;
+}
+
+.portfolio-gallery .col-lg-4 {
+  margin-bottom: 15px;
+}
+
+.portfolio-gallery .portfolio-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+
+.portfolio-gallery .portfolio-item img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-gallery .portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .portfolio {
+    padding: 10px;
   }
-</style>
+}
