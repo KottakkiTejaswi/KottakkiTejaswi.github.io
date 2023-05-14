@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tejaswi Kottakki - Resume</title>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <title>Tejaswi Kottakki - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
       padding-top: 20px;
     }
 
-    .resume {
+    .portfolio {
       background-color: #ffffff;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -39,42 +39,39 @@
       margin-bottom: 5px;
     }
 
-    .experience-item {
+    .project-item {
       margin-bottom: 20px;
     }
 
-    .education-item {
+    .portfolio-gallery {
+      margin-top: 30px;
+    }
+
+    .portfolio-gallery .row {
       margin-bottom: 20px;
     }
 
-    /* Colorful badges */
-    .badge-primary {
-      background-color: #007bff;
+    .portfolio-gallery .col-lg-4 {
+      margin-bottom: 15px;
     }
 
-    .badge-secondary {
-      background-color: #6c757d;
+    .portfolio-gallery .portfolio-item {
+      overflow: hidden;
+      position: relative;
+      border-radius: 5px;
     }
 
-    .badge-success {
-      background-color: #28a745;
+    .portfolio-gallery .portfolio-item img {
+      transition: transform 0.3s ease-in-out;
     }
 
-    .badge-info {
-      background-color: #17a2b8;
-    }
-
-    .badge-warning {
-      background-color: #ffc107;
-    }
-
-    .badge-danger {
-      background-color: #dc3545;
+    .portfolio-gallery .portfolio-item:hover img {
+      transform: scale(1.1);
     }
 
     /* Responsive styles */
     @media (max-width: 576px) {
-      .resume {
+      .portfolio {
         padding: 10px;
       }
     }
@@ -82,7 +79,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="resume">
+    <div class="portfolio">
       <h1>Tejaswi Kottakki</h1>
       <p>Hyderabad, India</p>
       <p>LinkedIn: <a href="https://linkedin.com/in/tejaswi-kottakki-4586701b5">linkedin.com/in/tejaswi-kottakki-4586701b5</a></p>
@@ -92,7 +89,7 @@
 
       <div class="section">
         <h2 class="section-title">Summary</h2>
-        <p>
+        <p class="lead">
           Highly motivated and detail-oriented third-year computer science student with a deep passion for data science.
           Possessing strong technical skills in programming languages such as Python and Java, as well as experience in developing data science projects and implementing machine learning algorithms.
           Seeking an internship opportunity to expand my skillset, work on real-world projects, and gain valuable industry experience in either field.
@@ -101,7 +98,7 @@
 
       <div class="section">
         <h2 class="section-title">Education</h2>
-        <div class="education-item">
+                <div class="education-item">
           <h3>Koneru Lakshmaiah Educational Foundations</h3>
           <p>Hyderabad, India</p>
           <p>Bachelor of Technology - Computer Science; CGPA: 9.15</p>
@@ -113,7 +110,7 @@
           <p>Intermediate; Percentage: 88.7%</p>
           <p>05/2018 - 04/2020</p>
         </div>
-         <div class="education-item">
+        <div class="education-item">
           <h3>Sri Chaitanya School</h3>
           <p>Hyderabad, India</p>
           <p>High School (Class X); CGPA: 9.7</p>
@@ -123,83 +120,75 @@
 
       <div class="section">
         <h2 class="section-title">Skills</h2>
-        <ul>
-          <li>Languages: C, Java, Python</li>
-          <li>Tools: SQL, MongoDB, PowerBI, Tableau, Dialogflow</li>
-          <li>Concepts: OOPs (Object-Oriented Programming), Data structures, Data Science, Machine Learning</li>
-          <li>Soft Skills: Communication, Collaboration, Adaptability, Leadership</li>
+        <ul class="list-group">
+          <li class="list-group-item">Languages: C, Java, Python</li>
+          <li class="list-group-item">Tools: SQL, MongoDB, PowerBI, Tableau, Dialogflow</li>
+          <li class="list-group-item">Concepts: OOPs (Object-Oriented Programming), Data structures, Data Science, Machine Learning</li>
+          <li class="list-group-item">Soft Skills: Communication, Collaboration, Adaptability, Leadership</li>
         </ul>
       </div>
 
       <div class="section">
         <h2 class="section-title">Projects</h2>
-        <div class="experience-item">
+        <div class="project-item">
           <h3>Autonomous Vehicle Analysis</h3>
           <p>In this data analytics project, the goal was to promote awareness of the potential for autonomous vehicle (AV) technology adoption in different countries, provided that their governments take appropriate steps. To achieve this, an Autonomous Vehicle Readiness Index (AVRI) was used to assess the preparedness and openness of different countries to AVs. Interactive dashboards were created to enable users to explore and analyze the AVRI data.</p>
           <p>Tools and Technologies used: PowerBI, Python, Jupyter notebook.</p>
         </div>
-        <div class="experience-item">
+        <div class="project-item">
           <h3>Audio Speech Recognition</h3>
           <p>Implemented an assistive technology in speech-to-text conversion to aid hearing-impaired individuals. The system can recognize the sentences spoken by the speaker and display them in text form. Google's automatic speech recognition technology was used to accomplish this.</p>
           <p>Tools and Technologies used: Python, Jupyter notebook, Google speech recognition, tkinter.</p>
         </div>
-        <div class="experience-item">
+        <div class="project-item">
           <h3>Time-Based OTP Verification System</h3>
           <p>Implemented a time-based 2-step one-time password verification system using Python full stack. Conducted a comparative analysis on different algorithms for generating OTPs to optimize system security and usability.</p>
           <p>Tools and Technologies used: Python, PyCharm, Django, TOTP.</p>
         </div>
-        <div class="experience-item">
-          <h3>Polynomial Arithmetic Application</h3>
-          <p>Developed a Java application for arithmetic operations on polynomial equations using linked lists to improve understanding of data structures and OOP concepts. The application provides features such as addition, subtraction, multiplication, and derivation. The objective behind it is to get familiar with data structures and OOP concepts.</p>
-          <p>Tools and Technologies used: Java, Eclipse.</p>
-        </div>
-        <div class="experience-item">
-          <h3>Personal Diary Management System</h3>
-          <p>Developed a personal diary management system using C language and file handling concepts. The application is console-based and allows users to create, read, update, and delete diary entries. The project aimed to improve skills in software development and file handling.</p>
-          <p>Tools and Technologies used: C, DevC++.</p>
-        </div>
-      </div>
-
-            <div class="section">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="experience-item">
-          <h3>Techniche IIT Guwahati</h3>
-          <p>Intern - Data Science</p>
-          <p>Guwahati, India</p>
-          <p>06/2022 - 08/2022</p>
-          <ul>
-            <li>Completed projects on Hierarchical Clustering and Linear Discriminant Analysis, contributing to the development of data analysis solutions.</li>
-            <li>Techniche IIT Guwahati is a reputed organization that provides students with opportunities to enhance their technical skills and gain practical experience.</li>
-            <li>This internship provided a valuable learning experience and improved my skills in data science and analytics.</li>
-          </ul>
-        </div>
       </div>
 
       <div class="section">
-        <h2 class="section-title">Certifications</h2>
-        <ul>
-          <li>Data Fundamentals (IBM SkillsBuild) - 03/2023</li>
-          <li>Microsoft Azure Fundamentals - 01/2023</li>
-          <li>Google Cloud Digital Leader - 12/2022</li>
-          <li>Advanced RPA Professional - 08/2022</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">Languages</h2>
-        <ul>
-          <li>English</li>
-          <li>Telugu</li>
-          <li>Hindi</li>
-        </ul>
+        <h2 class="section-title">Portfolio Gallery</h2>
+        <div class="portfolio-gallery">
+          <div class="row">
+            <div class="col-lg-4">
+                            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-item">
+                <img src="project3.jpg" alt="Project 3">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="portfolio-item">
+                <img src="project4.jpg" alt="Project 4">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-item">
+                <img src="project5.jpg" alt="Project 5">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-item">
+                <img src="project6.jpg" alt="Project 6">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
-       
 
-       
